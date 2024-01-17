@@ -1,0 +1,134 @@
+.info{
+    margin: 70px 100px;
+
+    .info-content{
+        display: flex;
+        gap: 50px;
+
+        .text-info{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+
+            h2{
+                font-size: 40px;
+                color: #d4b15d;
+            }
+
+            p{
+                font-size: 20px;
+                color: #fff;
+            }
+
+        }
+
+        .img-info{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
+    .row-crd{
+        margin-top: 70px;
+
+        h2{
+            margin-bottom: 30px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #d4b15d;
+        }
+
+        .cards{
+            background-color: #d4b15d;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+    
+            .row1{
+                display: flex;
+                gap: 1px;
+                min-height: 400px;
+                margin: 1px 1px 0px 1px;
+    
+                .left-row1{
+                    background-color: #272622;
+                    flex: 2;
+                    padding: 40px;
+                    color: #fff;
+                    
+                    h3{
+                        font-size: 30px;
+                        margin-bottom: 30px;
+                    }
+    
+                    span{
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+                }
+    
+                .right-row1{
+                    background-color: #272622;
+                    flex: 1.2;
+                    padding: 40px;
+                    color: #fff;
+
+                    h3{
+                        font-size: 30px;
+                        margin-bottom: 30px;
+                    }
+    
+                    span{
+                        font-weight: 300;
+                        font-size: 20px;
+                    }    
+                }
+            }
+    
+            .row2{
+                display: flex;
+                gap: 1px;
+                min-height: 400px;
+                margin: 0px 1px 1px 1px;
+    
+                .left-row2{
+                    background-color: #272622;
+                    flex: 1.2;
+                    padding: 40px;
+                    color: #fff;
+
+                    h3{
+                        font-size: 30px;
+                        margin-bottom: 30px;
+                    }
+    
+                    span{
+                        font-weight: 300;
+                        font-size: 20px;
+                    }    
+                }
+    
+                .right-row2{
+                    background-color: #272622;
+                    flex: 2;
+                    padding: 40px;
+                    color: #fff;
+
+                    h3{
+                        font-size: 30px;
+                        margin-bottom: 30px;
+                    }
+    
+                    span{
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

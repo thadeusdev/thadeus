@@ -5,11 +5,12 @@ import { ProjectsComponent } from './pages/website/projects/projects.component';
 import { BlogsComponent } from './pages/website/blogs/blogs.component';
 import { GalleryComponent } from './pages/website/gallery/gallery.component';
 import { ContactMeComponent } from './pages/website/contact-me/contact-me.component';
+import { HomeComponent } from './pages/website/home/home.component';
 
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '',
+        redirectTo: 'home',
         pathMatch: 'full'
     },
     {
@@ -35,6 +36,10 @@ export const routes: Routes = [
             {
                 path: 'contact-me',
                 component:ContactMeComponent
+            },
+            {
+                path: 'home',
+                component:HomeComponent
             },
         ]
     }
