@@ -1,0 +1,62 @@
+.slider-button {
+    position: relative;
+    min-width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d4b15d;
+    border: 1px solid;
+    border-radius: 29px;
+    color: #ffff;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    margin: 30px;
+  
+    /* animation effect on hover */
+    &:hover {
+      background: #fff;
+      color: #d4b15d;
+      .right-arrow {
+        right: calc(
+          100% -
+            (
+              32px +
+                2%
+            )
+        );
+        background: #d4b15d;
+        color: #fff;
+      }
+  
+      .text {
+        left: calc(
+          32px +
+            8%
+        );
+      }
+    }
+  }
+  
+  .text {
+    position: absolute;
+    white-space: nowrap;
+    left: 15px;
+    transition: left 1s ease-in-out;
+    text-transform: capitalize;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    right: 2%;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-size: 1.2rem;
+    color: #d4b15d;
+    border-radius: 29px;
+    transition: right 1s ease-in-out;
+  }

@@ -1,19 +1,33 @@
 <header class="header">
     <div class="header-items">
         <div class="logo">
-            <img src="assets/logo.png" alt="">
+            <a [routerLink]="['/']">
+                <img src="assets/logo.png" alt="">
+            </a>
         </div>
-        <div class="nav-links">
+        <div class="nav-links">            
             <ul>
-                <li>Services</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Blogs</li>
-                <li>Photos</li>
+                <span>Services</span>
+                
+                <li>
+                    <a [routerLink]="['/about']">About</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/projects']">Projects</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/blogs']">Blogs</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/gallery']">Gallery</a>
+                </li>
             </ul>
         </div>
         <div class="contact-btn">
-            <button class="btn">Contact Me</button>
+            <a [routerLink]="['/contact-me']">
+                <button class="btn">Contact Me</button>
+            </a>
         </div>
     </div>
 </header>
+<router-outlet></router-outlet>
