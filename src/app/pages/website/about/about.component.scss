@@ -1,0 +1,49 @@
+.about{
+    margin: 70px 100px;
+
+    .about-info{        
+        display: flex;
+        gap: 50px;
+    
+        .about-info{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+    
+            h2{
+                font-size: 40px;
+                color: #d4b15d;
+            }
+    
+            p{
+                font-size: 20px;
+                color: #fff;
+            }
+            .topics{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                .topic-item{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 20px;
+    
+                    .fa-circle-check{
+                        color: #4d9352;
+                    }
+    
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .img-info{
+            flex: 1;
+        }
+    }
+}

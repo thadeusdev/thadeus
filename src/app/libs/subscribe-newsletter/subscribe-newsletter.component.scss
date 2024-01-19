@@ -1,0 +1,61 @@
+.subscribe{
+    display: flex;
+    gap: 50px;
+    margin-top: 70px;
+    background-color: #212121;
+    padding: 50px;
+    border-radius: 20px;
+
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+        h2{
+            font-size: 40px;
+            color: #d4b15d;
+        }
+
+        p{
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .call-action{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            input{
+                height: 15px; 
+                padding: 10px; 
+                border: none;  
+                outline: none;  
+                border-radius: 5px;  
+                width: 50%;  
+                color: #d4b15d; 
+                font-size: 20px;
+                
+                &::placeholder{
+                    color: #d4b15d;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

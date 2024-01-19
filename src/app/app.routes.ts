@@ -6,6 +6,7 @@ import { BlogsComponent } from './pages/website/blogs/blogs.component';
 import { GalleryComponent } from './pages/website/gallery/gallery.component';
 import { ContactMeComponent } from './pages/website/contact-me/contact-me.component';
 import { HomeComponent } from './pages/website/home/home.component';
+import { SingleBlogComponent } from './pages/website/single-blog/single-blog.component';
 
 export const routes: Routes = [
     {
@@ -28,6 +29,10 @@ export const routes: Routes = [
             {
                 path: 'blogs',
                 component:BlogsComponent
+            },
+            {
+                path: 'blogs/welcome',
+                component:SingleBlogComponent
             },
             {
                 path: 'gallery',
