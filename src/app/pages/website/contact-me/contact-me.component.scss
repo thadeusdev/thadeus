@@ -1,4 +1,65 @@
 .contact-me{
     margin: 70px 100px;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .contact-item{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        width: 80%;
+        height: 50%;
+
+        .left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            p{
+                color: #fff;
+                font-size: 30px;
+            }
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                margin-top: 50px;
+
+                input, ::placeholder{
+                    height: 50px;
+                    font-size: 18px;
+                    background-color: #272622;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #fff;
+                }
+
+                textarea{
+                    height: 50px;
+                    font-size: 18px;
+                    background-color: #272622;
+                    color: #fff;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #fff;
+                    overflow-y: hidden;
+                    resize: none;
+                }
+            }
+
+            .btn{
+                align-self: flex-end;
+                margin-top: 20px;
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

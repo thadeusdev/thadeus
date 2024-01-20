@@ -1,5 +1,7 @@
 .about{
     margin: 70px 100px;
+    display: flex;
+    flex-direction: column;
 
     .about-info{        
         display: flex;
@@ -45,5 +47,10 @@
         .img-info{
             flex: 1;
         }
+    }
+
+    .news-lt{
+        width: 70%;
+        align-self: center;
     }
 }
