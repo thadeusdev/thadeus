@@ -40,15 +40,15 @@
                 li{
                     list-style-type: none;
                     cursor: pointer;
-                    transition: border-bottom 0.3s ease;
-
-                    &:hover{
-                        border-bottom: 1px solid #fff;
-                    }
 
                     a{
                         text-decoration: none;
                         color: #fff;
+
+                        &:hover{
+                            border-bottom: 1px solid #fff;
+                            transition: 0.3s ease-in-out;
+                        }
                     }
                 }
             }
@@ -77,3 +77,82 @@
         }
     }
 }
+
+@media only screen and (max-width: 999px) {
+    .header{
+        // position: fixed;
+        // top: 0;
+
+        .header-items{
+            display: flex; 
+
+            .logo{
+                img{
+                    height: 50px;
+                }
+            }
+    
+            .nav-icon{
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative; 
+                right: 0;       
+    
+                span{
+                    width: 32px;
+                    height: 3px;
+                    background-color: #fff;
+                    display: block;
+                    transition: 0.2s ease-in-out;
+    
+                    &:nth-child(2){
+                        margin: 4px 0px;
+                    }                
+                }
+            } 
+    
+            //disappear after showing nav-links
+            .nav-icon-class span:nth-child(2){
+                display: none;
+            }
+    
+            .nav-icon-class span:nth-child(1){
+                transform: rotate(40deg);
+            }
+    
+            .nav-icon-class span:nth-child(3){
+                transform: rotate(-40deg);
+                margin-top: -3px;
+            }
+    
+            .nav-links {
+                position: fixed;
+               // right: 0px; // used while styling to show nav links
+                right: -280px; // hides nav-links
+                top: 74px;
+                width: 280px;
+                height: 100%;
+                background-color: #272622; 
+                transition: right 0.3s ease-in-out;         
+          
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    padding: 10px 0px 10px 26px;
+    
+                    li{
+                        border-bottom: 1px solid #5e5a5a;
+                    }
+                }
+            }
+    
+            .navClass{
+                right: 0;
+                transition: 0.3s ease-in-out;
+            }
+        }    
+    }
+  }

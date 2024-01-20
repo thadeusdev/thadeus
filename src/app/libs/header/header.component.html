@@ -5,7 +5,15 @@
                 <img src="assets/logo.png" alt="">
             </a>
         </div>
-        <div class="nav-links">            
+
+        <div class="nav-icon" [class.nav-icon-class]="nav_icon_variable" (click)="openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="nav-links" [class.navClass]="navVariable" (click)="onLinkClick()">          
+
             <ul>                
                 <li>
                     <a [routerLink]="['/about']">About</a>

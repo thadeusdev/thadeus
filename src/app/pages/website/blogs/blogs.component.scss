@@ -55,3 +55,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 999px) {
+    .blogs{
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+
+        .blog-items{
+            width: 100%;
+        }
+    }
+}

@@ -14,3 +14,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 999px) {
+    .gallery{
+        margin: 20px;
+
+        .photos{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+
+            .photo{
+                
+            }
+        }
+    }
+}

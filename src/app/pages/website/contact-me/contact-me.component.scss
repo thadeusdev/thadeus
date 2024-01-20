@@ -1,6 +1,6 @@
 .contact-me{
     margin: 70px 100px;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     justify-content: center;
 
@@ -60,6 +60,33 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .contact-me{
+        margin: 20px;
+        display: flex;
+
+        .contact-item{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            .left{
+            }
+
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
         }
     }
 }

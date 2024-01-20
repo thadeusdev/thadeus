@@ -82,3 +82,21 @@
         border-top: 1px solid #d4b15d;
     }
 }
+
+@media only screen and (max-width: 999px) {
+    .footer{
+        .footer-items{
+            margin: 20px 20px 0px 20px;
+
+            .call-to-action{
+                h2{
+                    font-size: 20px;
+                }
+            }
+
+            .footer-links{
+                display: grid;
+            }
+        }
+    }
+}
