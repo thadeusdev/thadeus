@@ -4,7 +4,9 @@
             <h2>I'd love to build something</h2>
             <h2>amazing with you!</h2>
             
-            <app-slider-button [message]="'Get in touch with me'"></app-slider-button>
+            <a [routerLink]="['/contact-me']">
+                <app-slider-button [message]="'Get in touch with me'"></app-slider-button>                
+            </a>
 
         </div>
 

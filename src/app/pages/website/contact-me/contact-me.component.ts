@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SliderButtonComponent } from "../../../libs/slider-button/slider-button.component";
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-contact-me',
@@ -9,5 +10,8 @@ import { SliderButtonComponent } from "../../../libs/slider-button/slider-button
     imports: [SliderButtonComponent]
 })
 export class ContactMeComponent {
+    constructor(private titleService: Title) {
+        this.titleService.setTitle('Thadeus Nyariki - Contact Me')
+    }
 
 }

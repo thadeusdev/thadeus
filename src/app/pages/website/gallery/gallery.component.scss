@@ -1,16 +1,29 @@
 .gallery{
     margin: 70px 100px;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     justify-content: center;
 
     .photos{
-        width: 70%;
+        width: 80%;
         display: grid;
         grid-template-columns: auto auto auto;
 
         .photo{
             border: 1px solid #d4b15d;
+            overflow: hidden;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: transform 0.3s, z-index 0.3s;
+
+                &:hover{
+                    transform: scale(1.2);
+                    z-index: 1;
+                }
+            }
         }
     }
 }
@@ -24,8 +37,7 @@
             display: grid;
             grid-template-columns: auto;
 
-            .photo{
-                
+            .photo{              
             }
         }
     }
