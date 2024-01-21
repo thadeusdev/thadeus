@@ -1,14 +1,15 @@
-<section class="contact-me">
+<section class="contact-me" [formGroup]="form">
     <div class="contact-item">
         <div class="left">
             <p>Drop me a line and I'll get back to you</p>
-            <form action="">
-                <input type="text" value="" placeholder="Your name">
-                <input type="text" value="" placeholder="Company name">
-                <input type="text" value="" placeholder="E-mail">
-                <textarea name="" id="" placeholder="Message"></textarea>
-            </form>
-            <app-slider-button class="btn" [message]="'Send message'"></app-slider-button>
+            <form action="javascript:void(0)">
+                <input type="text" value="" placeholder="Your name" name="name" formControlName="from_name">
+                <input type="text" value="" placeholder="Company name" name="company" formControlName="from_company">
+                <input type="text" value="" placeholder="E-mail" name="email" formControlName="from_email">
+                <textarea name="" id="" placeholder="Message" name="message" formControlName="message"></textarea>
+            </form>  
+            <!-- {{form.value | json}}           -->
+            <app-slider-button class="btn" [message]="'Send message'" type="submit" (click)="send()"></app-slider-button>
         </div>
         <div class="right">
             <img src="assets/contact-me.svg" alt="">
