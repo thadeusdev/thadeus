@@ -7,6 +7,7 @@ import { GalleryComponent } from './pages/website/gallery/gallery.component';
 import { ContactMeComponent } from './pages/website/contact-me/contact-me.component';
 import { HomeComponent } from './pages/website/home/home.component';
 import { SingleBlogComponent } from './pages/website/single-blog/single-blog.component';
+import { NotFoundComponent } from './pages/website/not-found/not-found.component';
 
 export const routes: Routes = [
     {
@@ -45,6 +46,10 @@ export const routes: Routes = [
             {
                 path: 'home',
                 component:HomeComponent
+            },
+            {
+                path: '**',
+                component:NotFoundComponent
             },
         ]
     }
