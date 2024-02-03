@@ -1,21 +1,18 @@
 .subscribe{
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     margin-top: 70px;
     background-color: #212121;
     padding: 50px;
     border-radius: 20px;
 
     .left{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 50px;
 
         h2{
             font-size: 40px;
             color: #d4b15d;
+            margin-bottom: 30px;
         }
 
         p{
@@ -27,14 +24,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 20px;
 
             input{
                 height: 15px; 
                 padding: 10px; 
                 border: none;  
                 outline: none;  
-                border-radius: 5px;  
-                width: 50%;  
+                border-radius: 5px; 
                 color: #d4b15d; 
                 font-size: 18px;
                 height: 20px;
@@ -92,6 +89,7 @@
 
                 input{
                     width: 100%;
+                    margin-top: 30px;
                 }
             }
         }
