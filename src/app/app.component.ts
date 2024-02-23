@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule, ViewportScroller } from '@angular/common';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { LandingComponent } from "./pages/website/landing/landing.component";
 
 @Component({
@@ -12,6 +12,15 @@ import { LandingComponent } from "./pages/website/landing/landing.component";
 })
 export class AppComponent {
   title = 'thadeus';
+
+    //Scroll to Top on Navigation
+    constructor(private router: Router, private viewportScroller: ViewportScroller) {
+      this.router.events.subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          this.viewportScroller.scrollToPosition([0, 0]);
+        }
+      });
+    }
 }
 
 
